@@ -230,6 +230,11 @@ p {
     flex-direction: column;
     gap: 5px;
 }
+.popular__description-item > div{
+    display: flex;
+    align-items: center;
+    padding: 3px;
+}
 
 .popular__description-item .popular__description-bgIcon {
     width: 17px;
