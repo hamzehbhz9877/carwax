@@ -125,15 +125,6 @@
 
 /*mobile*/
 @media (max-width: 767.98px) {
-
-    .detailing .video>div{
-        width: 100%;
-        height: 100%;
-    }
-    .detailing video{
-        width: 100%;
-        height: 100%;
-    }
     .ceo {
         flex-direction: column;
 
@@ -177,5 +168,16 @@
 
     .popular__items {
         justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .detailing .video>div{
+        width: 100%;
+        height: 100%;
+    }
+    .detailing video{
+        width: 100%;
+        height: 100%;
     }
 }
