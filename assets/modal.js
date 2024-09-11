@@ -6,6 +6,7 @@ const body=document.querySelector('body')
 
 closeModal.addEventListener('click', (e) => {
     overlay.classList.remove('active')
+     body.style.overflow='auto'
 })
 
 modal.addEventListener('click', (e) => {
