@@ -1,0 +1,44 @@
+
+:root {
+    --swiper-pagination-color: #ffb62e;
+    --swiper-pagination-bullet-size: 8px;
+    --swiper-pagination-bullet-width: 8px;
+    --swiper-pagination-bullet-height: 8px;
+    --swiper-pagination-bullet-inactive-color: #ffffff;
+    --swiper-pagination-bullet-inactive-opacity: 1;
+    --swiper-pagination-bullet-opacity: 1;
+    --swiper-pagination-bullet-horizontal-gap: 15px;
+    --swiper-pagination-bullet-vertical-gap: 6px;
+
+    --swiper-navigation-color: #ffffff;
+    --swiper-navigation-size: 30px !important;
+}
+/*swipper*/
+.swiper {
+}
+
+.swiper-wrapper {
+    padding-top: 50px;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    top: 50px;
+    position: static !important;
+}
+
+.swiper-pagination {
+    position: static !important;
+}
+
+.swiper-bottom {
+    display: flex;
+    align-items: center;
+    padding-top: 65px;
+}
+
+.swiper-slide {
+    transform: none !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
