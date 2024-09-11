@@ -1,25 +1,27 @@
-const counters = document.querySelectorAll(".count");
-const speed = 200;
+const counters = document.querySelectorAll('.count'),
+    speed = 400,
+    /**
+     * create an IntersectionObserver with the specified callback that will be executed for each intersection change for every counter we have.
+     * You may customize the options (2nd argument) per you requirement
+     */
+    observer = new IntersectionObserver(
+        entries => entries.forEach(entry => entry.isIntersecting && animate(entry.target)),
+        {
+            threshold: 1 // tells the browser that we only need to execute the callback only when an element (counter) is fully visible in the viewport
+        }
+    ),
+    // the animate function now accepts a counter (HTML element)
+    animate = counter => {
+        const value = +counter.dataset.target,
+            data = +counter.innerText,
+            time = value / speed;
+        if (data < value) {
+            counter.innerText = Math.ceil(data + time);
+            setTimeout(() => animate(counter), 1);
+        } else {
+            counter.innerText = value;
+        }
+    };
 
-// The code to start the animation is now wrapped in a function
-const startCounters = () => {
-    counters.forEach((counter) => {
-        const updateCount = () => {
-            const target = parseInt(+counter.getAttribute("data-target"));
-            const count = parseInt(+counter.innerText);
-            const increment = Math.trunc(target / speed);
-            if (count < target) {
-                counter.innerText = count + increment;
-                setTimeout(updateCount, 1);
-            } else {
-                count.innerText = target;
-            }
-        };
-        updateCount();
-    });
-}
-
-// On the first scroll in this window, call the function to start the counters
-window.addEventListener('scroll', startCounters, {
-    once: true
-});
+// attach the counters to the observer
+counters.forEach(c => observer.observe(c));
