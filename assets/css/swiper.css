@@ -32,7 +32,7 @@
 
 .swiper-bottom {
     display: flex;
-    align-items: center;
+    align-items: end;
     padding-top: 65px;
 }
 
