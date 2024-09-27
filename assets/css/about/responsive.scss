@@ -55,7 +55,7 @@
         }
 
         &__features{
-            padding: 40px 20px;
+            padding: 40px 5px;
             width: max-content;
         }
         &__feature{
@@ -63,6 +63,17 @@
             &:nth-of-type(4){
                 padding-top: 0 ;
             }
+          &>div{
+            width: 54px;
+            height: 54px;
+          }
+          img{
+            width: 30px;
+            height: 30px;
+          }
+          span{
+            font-size: 14px;
+          }
         }
         &__point {
                 padding-top: 60px;
@@ -149,6 +160,7 @@
     }
   .header {
     background-position: right;
+    padding: 0 !important;
   }
   .brands, .history, .operation, .info, .services, .representation, .courses, .customers, .honors {
     background-position: center;

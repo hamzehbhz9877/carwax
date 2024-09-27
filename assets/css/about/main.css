@@ -207,6 +207,10 @@
 .operation__feature:nth-of-type(4) {
   padding-top: 70px;
 }
+.operation__feature img {
+  width: 40px;
+  height: 40px;
+}
 .operation__feature:after {
   z-index: -1;
   position: absolute;

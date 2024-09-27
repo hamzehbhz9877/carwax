@@ -45,7 +45,7 @@
     overflow: auto;
   }
   .operation__features {
-    padding: 40px 20px;
+    padding: 40px 5px;
     width: max-content;
   }
   .operation__feature {
@@ -53,6 +53,17 @@
   }
   .operation__feature:nth-of-type(4) {
     padding-top: 0;
+  }
+  .operation__feature > div {
+    width: 54px;
+    height: 54px;
+  }
+  .operation__feature img {
+    width: 30px;
+    height: 30px;
+  }
+  .operation__feature span {
+    font-size: 14px;
   }
   .operation__point {
     padding-top: 60px;
@@ -121,6 +132,7 @@
 
   .header {
     background-position: right;
+    padding: 0 !important;
   }
 
   .brands, .history, .operation, .info, .services, .representation, .courses, .customers, .honors {
