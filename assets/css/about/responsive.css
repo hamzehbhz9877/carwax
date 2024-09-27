@@ -1,0 +1,157 @@
+.desktop {
+  display: flex;
+}
+
+.mobile {
+  display: none;
+}
+
+/*responsive design*/
+@media (max-width: 1400px) {
+  p {
+    font-size: 14px;
+  }
+
+  .honors__wrapper {
+    margin-right: 0 !important;
+  }
+  .honors .overflow {
+    overflow: auto;
+  }
+}
+/*desktop*/
+@media (max-width: 1199.98px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+  }
+
+  .info .overflow {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .info__social {
+    padding: 50px !important;
+  }
+  .info__social:after {
+    width: -webkit-fill-available;
+    right: 20px !important;
+  }
+
+  .operation .overflow {
+    overflow: auto;
+  }
+  .operation__features {
+    padding: 40px 20px;
+    width: max-content;
+  }
+  .operation__feature {
+    width: 140px;
+  }
+  .operation__feature:nth-of-type(4) {
+    padding-top: 0;
+  }
+  .operation__point {
+    padding-top: 60px;
+  }
+  .operation__point p {
+    font-size: 16px;
+  }
+  .operation__view {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 50px;
+  }
+  .operation__view p {
+    font-size: 14px;
+  }
+  .operation__values {
+    position: absolute;
+    top: -40px !important;
+    right: 50% !important;
+    transform: translateX(50%);
+  }
+  .operation__values.top {
+    top: 0px !important;
+    right: 14% !important;
+  }
+
+  .services__list-item {
+    position: relative;
+    min-width: max-content;
+  }
+  .services__list-item > img {
+    height: 500px !important;
+    width: auto;
+    cursor: pointer;
+  }
+  .services__list-item > div span {
+    font-size: 12px;
+  }
+  .services__list-item > div img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .representation__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  .representation__wrapper:first-of-type {
+    width: 100%;
+  }
+}
+/*tablet*/
+@media (max-width: 991.98px) {
+  .honors__list {
+    min-width: max-content;
+  }
+
+  .info__text {
+    gap: 20px;
+    font-size: 16px;
+  }
+  .info p {
+    font-size: 16px;
+  }
+
+  .header {
+    background-position: right;
+  }
+
+  .brands, .history, .operation, .info, .services, .representation, .courses, .customers, .honors {
+    background-position: center;
+  }
+
+  .services, .courses, .customers, .honors, .brands, .history, .operation {
+    padding-bottom: 140px !important;
+  }
+}
+/*mobile*/
+@media (max-width: 767.98px) {
+  .header .section-title {
+    font-size: 16px;
+    position: absolute;
+    top: 50% !important;
+    left: 50% !important;
+    width: max-content;
+    transform: translate(-50%, -50%);
+  }
+  .header button {
+    right: unset;
+    bottom: unset;
+  }
+
+  .honors__wrapper h3 {
+    font-size: 22px;
+  }
+  .honors__list {
+    min-width: max-content;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */

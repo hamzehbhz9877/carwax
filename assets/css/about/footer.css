@@ -1,0 +1,32 @@
+.honors {
+  background-image: url("../../images/about/section-9.svg");
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0 200px 0;
+}
+.honors h3 {
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 48px;
+  --bottom-color: #ffb62e;
+  --right-color: #111111;
+  text-shadow: 4px 3px 0 var(--right-color), 6px 4px 0 var(--bottom-color);
+}
+.honors__wrapper {
+  margin-right: 400px;
+}
+.honors__list {
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+}
+.honors__list img {
+  cursor: pointer;
+  width: 125px;
+  height: 125px;
+}
+
+/*# sourceMappingURL=footer.css.map */

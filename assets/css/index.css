@@ -1,0 +1,95 @@
+@font-face {
+  font-family: IranYekan;
+  src: local("IranYekan"), url("../fonts/iranyekanwebregular(fanum).woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  overflow-x: hidden !important;
+}
+
+html, body {
+  direction: rtl;
+  font-family: IranYekan !important;
+  line-height: 1.8;
+}
+
+/*button*/
+button, input {
+  font-family: IranYekan !important;
+  cursor: pointer;
+  background: transparent;
+}
+
+/*basic style*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+*:focus {
+  outline: 0 !important;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+ul {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ol, ul {
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6, span, p {
+  color: #f3f3f3;
+}
+
+/*container*/
+.container {
+  margin: auto;
+  padding: 0 15px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+p {
+  text-align-last: center;
+  text-align: justify;
+  color: white;
+  font-size: 17px;
+}
+
+.relative {
+  position: relative;
+}
+
+/*# sourceMappingURL=index.css.map */

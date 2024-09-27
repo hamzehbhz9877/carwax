@@ -1,104 +1,7 @@
-@font-face {
-    font-family: IranYekan;
-    src: local("IranYekan"), url("../fonts/iranyekanwebregular(fanum).woff2") format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-
-body {
-    overflow-x: hidden;
-}
-
-html, body {
-    direction: rtl;
-    font-family: IranYekan !important;
-    line-height: 1.8;
-}
-
-/*button*/
-
-button, input {
-    font-family: IranYekan !important;
-    cursor: pointer;
-    background: transparent;
-}
-
-
-/*basic style*/
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-
-*:focus {
-    outline: 0 !important;
-}
-
-body {
-    scroll-behavior: smooth;
-}
-
-ul {
-    margin: 0 !important;
-    padding: 0 !important;
-    list-style: none;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-ol, ul {
-    padding: 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-weight: bold;
-}
-
-h1, h2, h3, h4, h5, h6, span, p {
-    color: #f3f3f3;
-}
-
-/*container*/
-.container {
-    margin: auto;
-    padding: 0 15px;
-}
-
-@media (min-width: 768px) {
-    .container {
-        width: 750px;
-    }
-}
-
-@media (min-width: 992px) {
-    .container {
-        width: 970px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .container {
-        width: 1170px;
-    }
-}
-
-
-p {
-    text-align-last: center;
-    text-align: justify;
-    color: white;
-    font-size: 17px;
-}
 
 /*section-1*/
 .header {
-    background-image: url("../images/Layer 881.svg");
+    background-image: url("../../images/main/Layer 881.svg");
     height: 100vh;
     width: 100%;
     position: relative;
@@ -141,7 +44,7 @@ p {
 
 /*section-2*/
 .popular {
-    background-image: url("../images/icon.svg");
+    background-image: url("../../images/main/icon.svg");
     height: 100%;
     width: 100%;
     max-width: 100%;
@@ -263,7 +166,7 @@ p {
 /*section-3*/
 
 .structure {
-    background-image: url("../images/section3.svg");
+    background-image: url("../../images/main/section3.svg");
     height: 100%;
     width: 100%;
     position: relative;
@@ -335,7 +238,7 @@ p {
 
 /*section-4*/
 .statistic {
-    background-image: url("../images/section4.svg");
+    background-image: url("../../images/main/section4.svg");
     height: 100%;
     width: 100%;
     position: relative;
@@ -397,7 +300,7 @@ p {
 
 /*section-5*/
 .detailing {
-    background-image: url("../images/section5.svg");
+    background-image: url("../../images/main/section5.svg");
     height: 100%;
     width: 100%;
     max-width: 100%;
@@ -419,7 +322,7 @@ p {
 
 /*section-6*/
 .detailing-course {
-    background-image: url("../images/section6.svg");
+    background-image: url("../../images/main/section6.svg");
     height: 100%;
     width: 100%;
     max-width: 100%;
@@ -509,7 +412,7 @@ p {
 
 /*section-7*/
 .carwax-family {
-    background-image: url("../images/section7.svg");
+    background-image: url("../../images/main/section7.svg");
     height: 100%;
     width: 100%;
     max-width: 100%;
@@ -521,7 +424,7 @@ p {
 
 /*section-8*/
 .services {
-    background-image: url("../images/section8.svg");
+    background-image: url("../../images/main/section8.svg");
     height: 100%;
     width: 100%;
     max-width: 100%;
