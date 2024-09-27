@@ -690,4 +690,13 @@
 
 }
 
+button{
+  transition: all .2s ease-in-out 0s;
+
+  &:hover {
+    background: #ffb62e !important;
+    color: white !important;
+  }
+}
+
 

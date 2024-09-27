@@ -582,4 +582,12 @@
   color: black;
 }
 
+button {
+  transition: all 0.2s ease-in-out 0s;
+}
+button:hover {
+  background: #ffb62e !important;
+  color: white !important;
+}
+
 /*# sourceMappingURL=main.css.map */
