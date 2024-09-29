@@ -69,6 +69,12 @@
     align-items: center;
     cursor: pointer;
 }
+.popular__item span{
+    color: #ffb62e;
+    display: inline-block;
+    padding-top: 25px;
+    font-size: 12px;
+}
 
 .popular__item img {
     border-radius: 50%;
@@ -88,6 +94,13 @@
     text-align: center;
     max-width: 330px;
 }
+.popular__item p:last-of-type{
+    display: none;
+}
+
+.popular__item p.active{
+    display: block;
+}
 
 .popular__item.active img {
     border: 2px solid #ffb62e;
@@ -101,7 +114,7 @@
     display: none;
     gap: 20px;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 30px;
     padding: 5px 15px;
     border-radius: 10px;
     border: 1px solid #ffb62e;

@@ -15,4 +15,13 @@ AllItems.forEach(e=>{
         document.querySelector(`[data-target="${e.id}"]`).classList.add('active')
         e.classList.add('active')
     })
+
+    const readMore=e.querySelector("span")
+
+    readMore.addEventListener("click",(element)=>{
+        element.stopPropagation()
+        const content=readMore.previousElementSibling
+        content.classList.toggle('active')
+        readMore.remove()
+    })
 })
