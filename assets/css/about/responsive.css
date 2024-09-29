@@ -12,6 +12,10 @@
     font-size: 14px;
   }
 
+  .courses__list-item {
+    height: 240px;
+  }
+
   .honors__wrapper {
     margin-right: 0 !important;
   }

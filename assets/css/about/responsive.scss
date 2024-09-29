@@ -11,6 +11,11 @@
   p {
     font-size: 14px;
   }
+  .courses {
+    &__list-item{
+      height: 240px;
+    }
+  }
   .honors {
     &__wrapper {
       margin-right: 0 !important;
