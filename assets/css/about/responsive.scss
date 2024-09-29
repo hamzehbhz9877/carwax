@@ -20,16 +20,14 @@
     &__wrapper {
       margin-right: 0 !important;
     }
-
-    .overflow {
-      overflow: auto;
-    }
   }
 }
 
 /*desktop*/
 @media (max-width: 1199.98px) {
-
+  .overflow {
+    overflow: auto;
+  }
   .desktop {
     display: none;
   }
@@ -111,8 +109,8 @@
       min-width: max-content;
 
       & > img {
-        height: 500px !important;
-        width: auto;
+        //height: 500px !important;
+        //width: auto;
         cursor: pointer;
       }
 
@@ -147,6 +145,15 @@
 
 /*tablet*/
 @media (max-width: 991.98px) {
+
+  .history{
+    &__description.mobile{
+      padding: 15px 20px;
+      position: unset;
+      display: block;
+      width: auto;
+    }
+  }
 
   .honors {
     &__list{

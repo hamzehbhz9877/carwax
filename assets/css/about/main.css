@@ -1,8 +1,6 @@
-.customers p, .representation__cities button, .history p, .operation__view, .operation__point, .operation__values, .about .box-shadow, .about .section-title {
+.customers p, .representation__cities button, .operation__view, .operation__point, .operation__values, .about .box-shadow, .about .section-title {
   background-color: #f4f4f4;
-  --bottom-color: #ffb62e;
-  --right-color: #111111;
-  box-shadow: 4px 3px 0 var(--right-color), 6px 4px 0 var(--bottom-color);
+  box-shadow: 4px 3px 0 #111111, 6px 4px 0 #ffb62e;
 }
 
 .about section {
@@ -244,12 +242,21 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 180px !important;
+  overflow: hidden;
 }
-.history p {
-  font-weight: bold;
+.history__description {
+  background-color: #f4f4f4;
+  box-shadow: 9px 6px 0 #111111, 12px 8px 0 #ffb62e;
   border-radius: 18px;
+  padding: 30px 20px 15px 20px;
+  width: calc(100% - 270px);
+  right: -10px;
+  position: relative;
+  top: -115px;
+}
+.history__description p {
+  font-weight: bold;
   color: black;
-  padding: 10px 20px;
 }
 .history__timeline {
   width: 1170px;
@@ -452,10 +459,13 @@
   position: relative;
   min-width: max-content;
 }
-.services__list-item > img {
+.services__list-item > img:first-of-type {
   height: 600px !important;
   width: auto;
   cursor: pointer;
+}
+.services__list-item > img:last-of-type {
+  display: none;
 }
 .services__list-item > div {
   position: absolute;
@@ -588,6 +598,25 @@ button {
 button:hover {
   background: #ffb62e !important;
   color: white !important;
+}
+
+.overflow::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+.overflow::-webkit-scrollbar {
+  width: 8px;
+  background-color: #F5F5F5;
+  border-radius: 10px;
+  height: 10px;
+}
+
+.overflow::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #c1c1c1;
 }
 
 /*# sourceMappingURL=main.css.map */

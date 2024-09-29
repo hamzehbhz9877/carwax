@@ -19,12 +19,13 @@
   .honors__wrapper {
     margin-right: 0 !important;
   }
-  .honors .overflow {
-    overflow: auto;
-  }
 }
 /*desktop*/
 @media (max-width: 1199.98px) {
+  .overflow {
+    overflow: auto;
+  }
+
   .desktop {
     display: none;
   }
@@ -99,8 +100,6 @@
     min-width: max-content;
   }
   .services__list-item > img {
-    height: 500px !important;
-    width: auto;
     cursor: pointer;
   }
   .services__list-item > div span {
@@ -122,6 +121,13 @@
 }
 /*tablet*/
 @media (max-width: 991.98px) {
+  .history__description.mobile {
+    padding: 15px 20px;
+    position: unset;
+    display: block;
+    width: auto;
+  }
+
   .honors__list {
     min-width: max-content;
   }

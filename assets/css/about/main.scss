@@ -1,9 +1,10 @@
+$--bottom-color: #ffb62e;
+$--right-color: #111111;
+
 %box-shadow {
   background-color: #f4f4f4;
-  --bottom-color: #ffb62e;
-  --right-color: #111111;
-  box-shadow: 4px 3px 0 var(--right-color),
-  6px 4px 0 var(--bottom-color),
+  box-shadow: 4px 3px 0 $--right-color,
+  6px 4px 0 $--bottom-color,
 }
 
 
@@ -293,13 +294,23 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 180px !important;
+  overflow: hidden;
 
-  p {
-    @extend %box-shadow;
-    font-weight: bold;
+  &__description {
+    background-color: #f4f4f4;
+    box-shadow: 9px 6px 0 $--right-color,
+    12px 8px 0 $--bottom-color;
+
     border-radius: 18px;
-    color: black;
-    padding: 10px 20px;
+    padding: 30px 20px 15px 20px;
+    width: calc(100% - 270px);
+    right: -10px;
+    position: relative;
+    top: -115px;
+    p{
+      font-weight: bold;
+      color: black;
+    }
   }
 
   &__timeline {
@@ -534,10 +545,20 @@
       position: relative;
       min-width: max-content;
 
-      & > img {
+      & > img:first-of-type {
         height: 600px !important;
         width: auto;
         cursor: pointer;
+      }
+
+      & > img:last-of-type {
+        //height: 600px !important;
+        //width: 100%;
+        //object-fit: cover;
+        //cursor: pointer;
+        //position: absolute;
+        //inset: 0;
+        display: none;
       }
 
       & > div {
@@ -699,4 +720,31 @@ button{
   }
 }
 
+
+.overflow{
+  //overflow: auto;
+}
+
+
+.overflow::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+.overflow::-webkit-scrollbar
+{
+  width: 8px;
+  background-color: #F5F5F5;
+  border-radius: 10px;
+  height: 10px;
+}
+
+.overflow::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #c1c1c1;
+}
 
