@@ -450,31 +450,44 @@
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 260px !important;
+  padding-bottom: 190px !important;
+  padding-top: 0px !important;
 }
 .services__list {
   display: flex;
   justify-content: center;
   min-width: max-content;
-  margin: 0 10px;
+  position: relative;
+}
+.services__list > img {
+  position: absolute;
+  bottom: -55px;
+  right: 0;
+  left: 0;
+  z-index: 7;
+  width: 100%;
 }
 .services__list-item {
   position: relative;
   min-width: max-content;
+  flex: 1;
+  box-shadow: -10px 10px 10px 3px #000000a1;
 }
 .services__list-item > img:first-of-type {
-  height: 600px !important;
-  width: auto;
+  width: 100%;
   cursor: pointer;
 }
-.services__list-item > img:last-of-type {
-  display: none;
+.services__list-item > img:nth-of-type(2) {
+  cursor: pointer;
+  width: 100%;
+  position: absolute;
+  inset: 0;
 }
 .services__list-item > div {
   position: absolute;
   height: 110px;
   z-index: 1;
-  bottom: 10px;
+  bottom: 40px;
   left: 0;
   right: 0;
   display: flex;

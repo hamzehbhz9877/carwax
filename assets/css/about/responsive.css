@@ -8,8 +8,17 @@
 
 /*responsive design*/
 @media (max-width: 1400px) {
+  .services .overflow {
+    overflow-y: hidden !important;
+    overflow-x: auto;
+  }
+
   p {
     font-size: 14px;
+  }
+
+  .services {
+    padding-bottom: 100px !important;
   }
 
   .courses__list-item {
@@ -157,6 +166,10 @@
 
   .services, .courses, .customers, .honors, .brands, .history, .operation {
     padding-bottom: 140px !important;
+  }
+
+  .services {
+    padding-bottom: 60px !important;
   }
 }
 /*mobile*/
