@@ -147,14 +147,16 @@
 @media (max-width: 991.98px) {
 
   .history{
-    &__description.mobile{
-      padding: 15px 20px;
-      position: unset;
-      display: block;
-      width: auto;
-    }
-    &.desktop{
-      display: none !important;
+    &__description{
+      &.mobile{
+        padding: 15px 20px;
+        position: unset;
+        display: block;
+        width: auto;
+      }
+      &.desktop{
+        display: none !important;
+      }
     }
   }
 

@@ -127,7 +127,7 @@
     display: block;
     width: auto;
   }
-  .history.desktop {
+  .history__description.desktop {
     display: none !important;
   }
 
