@@ -71,6 +71,10 @@
         gap: 10px;
     }
 
+    .carwax-family .box img{
+        width: 100% !important;
+    }
+
     .structure__voice {
         flex-direction: column;
     }
