@@ -307,6 +307,9 @@ $--right-color: #111111;
     right: -10px;
     position: relative;
     top: -115px;
+    &.desktop{
+      display: block !important;
+    }
     p{
       font-weight: bold;
       color: black;

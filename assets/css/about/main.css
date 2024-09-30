@@ -254,6 +254,9 @@
   position: relative;
   top: -115px;
 }
+.history__description.desktop {
+  display: block !important;
+}
 .history__description p {
   font-weight: bold;
   color: black;
