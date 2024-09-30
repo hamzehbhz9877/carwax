@@ -1,5 +1,4 @@
-$--bottom-color: #ffb62e;
-$--right-color: #111111;
+@import "variables";
 
 %box-shadow {
   background-color: #f4f4f4;
@@ -321,7 +320,7 @@ $--right-color: #111111;
   &__timeline {
     width: 1170px;
     position: relative;
-    padding-top: 0px !important;
+    padding-top: 0 !important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -539,7 +538,7 @@ $--right-color: #111111;
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 190px !important;
-padding-top: 0px !important;
+padding-top: 0 !important;
   &__list {
     display: flex;
     justify-content: center;
@@ -679,7 +678,7 @@ padding-top: 0px !important;
       position: relative;
 
       & > div {
-        box-shadow: rgb(0 0 0 / 24%) 0px 8px 8px 0;
+        box-shadow: rgb(0 0 0 / 24%) 0 8px 8px 0;
         height: 90px;
       }
 

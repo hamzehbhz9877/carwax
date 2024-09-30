@@ -264,7 +264,7 @@
 .history__timeline {
   width: 1170px;
   position: relative;
-  padding-top: 0px !important;
+  padding-top: 0 !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -451,7 +451,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 190px !important;
-  padding-top: 0px !important;
+  padding-top: 0 !important;
 }
 .services__list {
   display: flex;
@@ -566,7 +566,7 @@
   position: relative;
 }
 .courses__list-item > div {
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 8px 8px 0;
+  box-shadow: rgba(0, 0, 0, 0.24) 0 8px 8px 0;
   height: 90px;
 }
 .courses__list-item .bg {

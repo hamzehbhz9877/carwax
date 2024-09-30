@@ -11,12 +11,13 @@
   text-align: center;
   margin-bottom: 0;
   font-size: 48px;
-  --bottom-color: #ffb62e;
-  --right-color: #111111;
-  text-shadow: 4px 3px 0 var(--right-color), 6px 4px 0 var(--bottom-color);
+  text-shadow: 2px 1px 0 #111111, 4px 2px 0 #ffb62e;
 }
 .honors__wrapper {
   margin-right: 400px;
+}
+.honors__wrapper > div {
+  padding-bottom: 60px;
 }
 .honors__list {
   justify-content: center;

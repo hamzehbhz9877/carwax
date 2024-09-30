@@ -28,6 +28,10 @@
   .honors__wrapper {
     margin-right: 0 !important;
   }
+  .honors__wrapper > div {
+    padding-bottom: 0;
+    padding-top: 20px;
+  }
 }
 /*desktop*/
 @media (max-width: 1199.98px) {
@@ -113,7 +117,7 @@
     transform: translateX(50%);
   }
   .operation__values.top {
-    top: 0px !important;
+    top: 0 !important;
     right: 14% !important;
   }
 
