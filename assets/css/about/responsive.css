@@ -127,6 +127,9 @@
     display: block;
     width: auto;
   }
+  .history.desktop.desktop {
+    display: none !important;
+  }
 
   .honors__list {
     min-width: max-content;

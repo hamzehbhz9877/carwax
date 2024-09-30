@@ -153,6 +153,9 @@
       display: block;
       width: auto;
     }
+    &.desktop.desktop{
+      display: none !important;
+    }
   }
 
   .honors {
