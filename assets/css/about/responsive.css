@@ -43,6 +43,9 @@
   .history__description.desktop {
     display: none !important;
   }
+  .history__timeline {
+    padding-top: 70px !important;
+  }
 
   .info .overflow {
     overflow-x: auto;

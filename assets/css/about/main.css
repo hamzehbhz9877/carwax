@@ -264,7 +264,7 @@
 .history__timeline {
   width: 1170px;
   position: relative;
-  padding-top: 70px !important;
+  padding-top: 0px !important;
   display: flex;
   justify-content: center;
   align-items: center;
