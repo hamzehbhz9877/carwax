@@ -35,6 +35,19 @@
     display: flex;
   }
 
+  .history{
+    &__description{
+      &.mobile{
+        padding: 15px 20px;
+        position: unset;
+        display: block;
+        width: auto;
+      }
+      &.desktop{
+        display: none !important;
+      }
+    }
+  }
 
     .info{
         .overflow{
@@ -146,19 +159,6 @@
 /*tablet*/
 @media (max-width: 991.98px) {
 
-  .history{
-    &__description{
-      &.mobile{
-        padding: 15px 20px;
-        position: unset;
-        display: block;
-        width: auto;
-      }
-      &.desktop{
-        display: none !important;
-      }
-    }
-  }
 
   .honors {
     &__list{

@@ -34,6 +34,16 @@
     display: flex;
   }
 
+  .history__description.mobile {
+    padding: 15px 20px;
+    position: unset;
+    display: block;
+    width: auto;
+  }
+  .history__description.desktop {
+    display: none !important;
+  }
+
   .info .overflow {
     overflow-x: auto;
     overflow-y: hidden;
@@ -121,16 +131,6 @@
 }
 /*tablet*/
 @media (max-width: 991.98px) {
-  .history__description.mobile {
-    padding: 15px 20px;
-    position: unset;
-    display: block;
-    width: auto;
-  }
-  .history__description.desktop {
-    display: none !important;
-  }
-
   .honors__list {
     min-width: max-content;
   }
