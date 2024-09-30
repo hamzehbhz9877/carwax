@@ -17,6 +17,7 @@
 
 .video-bg:hover, .video-icon:hover + .video-bg {
     border-color: #ffb62e;
+    opacity: .3;
 }
 
 .video-icon {
